@@ -1,0 +1,34 @@
+﻿"""
+Global Configuration & Hyperparameters for Lunar Registration AI Engine
+"""
+
+# GSD Pyramid Settings
+GAUSSIAN_KERNEL_SIZE = (5, 5)
+GAUSSIAN_SIGMA = 1.0
+
+# CLAHE Enhancement Settings
+CLAHE_CLIP_LIMIT = 2.5
+CLAHE_TILE_GRID_SIZE = (8, 8)
+
+# RIFT2 Log-Gabor Phase Congruency Settings
+LOG_GABOR_N_SCALES = 4
+LOG_GABOR_N_ORIENTATIONS = 6
+LOG_GABOR_MIN_WAVELENGTH = 3.0
+LOG_GABOR_MULT = 1.6
+LOG_GABOR_SIGMA_ON_F = 0.75
+
+# MAGSAC++ Filtering Settings
+MAGSAC_THRESHOLD_PIXELS = 3.0
+MAGSAC_CONFIDENCE = 0.999
+MAGSAC_MAX_ITERS = 10000
+SPATIAL_BINS_GRID = (4, 4)
+
+# Sub-pixel Lucas-Kanade Settings
+LK_WIN_SIZE = (21, 21)
+LK_MAX_LEVEL = 3
+LK_CRITERIA_EPS = 0.01
+LK_CRITERIA_COUNT = 30
+
+# Planetary Geospatial CRS
+LUNAR_CRS_EPSG = "EPSG:30100"  # Moon 2000 Equidistant Cylindrical / IAU2000:30100
+MOON_RADIUS_METERS = 1737400.0
